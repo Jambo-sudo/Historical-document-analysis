@@ -65,7 +65,7 @@ def inference(input_path,model,model_weight):
 
 #input = "demo/input1.jpg"
 model = "configs/DLA_mask_rcnn_X_101_32x8d_FPN_3x.yaml"
-model_weight = 'demo/pub_model_final.pth'
+model_weight = 'model_weight/pub_model_final.pth'
 
 
 #设置允许的文件格式
@@ -100,7 +100,7 @@ def upload():
             return render_template('upload_start2.html',warning = "Illegal input, please choose again.")
         # 根据当前文件所在路径，创建一个储存image的文件夹
         basepath = os.path.dirname(__file__) 
-        file_path = os.path.join(basepath, 'static/images')
+        file_path = os.path.join(basepath, 'static/result')
         print('file path:',file_path)
         if not os.path.exists(file_path):
             os.makedirs(file_path, 755)
