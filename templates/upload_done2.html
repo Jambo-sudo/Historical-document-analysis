@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thesis project</title>
+</head>
+<body>
+    <h1>Document layout analysis</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+        <br>
+        <input type="submit" value="submit" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <img src="{{ url_for('static', filename='/images/' + input_name) }}" height={{new_height}} width={{new_weight}} alt="你的图片被外星人劫持了～～"/>
+</body>
+</html>
