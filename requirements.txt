@@ -4,3 +4,4 @@ flask
 Pillow>=7.1.0
 gunicorn
 requests==2.22.0
+pymongo==3.6.1
